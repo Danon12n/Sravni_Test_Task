@@ -11,6 +11,7 @@ app.use(express.json());
 app.use('/api', router);
 
 
+
 const start = async () => {
     try {
         app.listen(PORT, () => { console.log(`Server started on port: ${PORT}!\n`); });

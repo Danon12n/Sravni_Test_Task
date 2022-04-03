@@ -1,0 +1,48 @@
+.header {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    &__navLink {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background: #00bfff;
+        border: #00bfff 1px solid;
+        border-radius: 5px;
+        transition: 0.5s ease;
+    
+        padding: 20px;
+    
+        &:hover {
+            color: black;
+            background: transparent;
+            
+            transition: 0.5s ease;
+        }
+    
+        &:active {
+            color: rgb(212, 212, 255);
+        }
+    }
+    
+}
+
+.globalCont {
+    padding: 0 20px;
+    
+}
+

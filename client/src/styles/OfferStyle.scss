@@ -1,0 +1,29 @@
+.cont {
+    flex: 1 1 auto;
+    max-width: 1320px;
+
+    flex-direction: column; 
+
+    .row {
+        border: 1px solid #dddede;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        
+        flex: 1 1;
+
+        padding: 15px;
+    }
+
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.row_gray {
+    background: dddede;
+}
+.row_white {
+    background: white;
+}

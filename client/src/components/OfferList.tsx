@@ -21,13 +21,13 @@ const OfferList: FC<OfferListProps> = ({ data }) => {
             <div className="listSort">
                 Сортировать:
                 <div
-                    className="btn"
+                    className="btn ml"
                     onClick={() => { FilterOffersByPrice(data) }}
                 >
                     по цене
                 </div>
                 <div
-                    className="btn"
+                    className="btn ml"
                     onClick={() => { FilterOffersByRate(data) }}
                 >
                     по ставке

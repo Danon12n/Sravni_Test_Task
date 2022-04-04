@@ -3,7 +3,7 @@
     max-width: 1320px;
 
     flex-direction: column; 
-
+    
     .listSort {
         background: white;
 
@@ -89,4 +89,8 @@
     &:active {
         color: rgb(212, 212, 255);
     }
+}
+
+.ml {
+    margin-left: 10px;
 }

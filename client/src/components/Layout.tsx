@@ -13,7 +13,6 @@ const Layout: FC<LayoutProps> = function ({ children }) {
             <header className='header'>
                 <nav className='nav'>
                     <NavLink className='nav__navLink' to={"/"}>Главная</NavLink>
-                    <NavLink className='nav__navLink' to={"/"}>не Главная</NavLink>
                 </nav>
             </header>
             <div className="globalCont">

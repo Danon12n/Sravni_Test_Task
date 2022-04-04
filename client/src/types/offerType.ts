@@ -48,3 +48,8 @@ export interface offerType {
     rate:rateType,
 }
 
+export interface indexedOfferType {
+    id:number,
+    data: offerType
+}
+

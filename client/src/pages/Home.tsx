@@ -10,7 +10,7 @@ interface HomeProps {
 const Home: FC<HomeProps> = ({ }) => {
 
     const { fetchOffersPart } = useActions();
-    const { data, isLoading, isAllLoaded } = useTypedSelector(state => state.offer)
+    const { indexedData, isLoading, isAllLoaded } = useTypedSelector(state => state.offer)
 
     useEffect(() => {
         if (!isAllLoaded) {
@@ -24,7 +24,7 @@ const Home: FC<HomeProps> = ({ }) => {
 
     return (
         <div className="homePageCont">
-            <OfferList data={data} />
+            <OfferList data={indexedData} />
         </div>
     )
 }

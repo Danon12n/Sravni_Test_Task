@@ -9,7 +9,7 @@ export const fetchOffersPart = () => {
         try {
             dispatch({type:offerActions.GET_PART_OFFERS})
             const response = await axios.get<offerType[]>('http://localhost:5000/api/offers?limit=10')
-            let new_data = response.data.map((el, i) => { return {id: i, data:el}})
+            const new_data = response.data.map((el, i) => { return {id: i, data:el}})
             dispatch({type:offerActions.GET_PART_OFFERS_SUCCESS, payload: new_data})
         } catch (e) {
             alert(e);
@@ -22,7 +22,7 @@ export const fetchAllOffers = () => {
         try {
             dispatch({type:offerActions.GET_ALL_OFFERS})
             const response = await axios.get<offerType[]>('http://localhost:5000/api/offers')
-            let new_data = response.data.map((el, i) => { return {id: i, data:el}})
+            const new_data = response.data.map((el, i) => { return {id: i, data:el}})
             dispatch({type:offerActions.GET_ALL_OFFERS_SUCCESS, payload: new_data})
         } catch (e) {
             alert(e);
